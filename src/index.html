@@ -2,16 +2,154 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    >
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="get"
+      autocomplete="off"
+    >
+      <fieldset class="infBox" name="persoanlInf">
+        <legend>Personal information</legend>
+        <label class="form_inf">
+        Surname:
+          <input
+            type="text"
+            name="Surname"
+            id="one"
+          >
+        </label>
+        <label class="form_inf">
+        Name:
+          <input
+          type="text"
+          name="Name"
+          id="two"
+          >
+        </label>
+        <label class="form_inf">
+          How old are You?
+          <input
+          type="number"
+          name="Age"
+          min="1"
+          max="100"
+          value="12"
+          id="three"
+          >
+        </label>
+        <label class="form_inf">
+          Full date of birth:
+          <input
+          type="date"
+          name="birthday"
+          id="four"
+          >
+        </label>
+        <label class="form_inf">
+          I accept the term of the agreement
+          <input
+          type="checkbox"
+          name="accept"
+          id="accept"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="infBox" name="reg">
+        <legend>Registration</legend>
+        <label class="form_inf">
+          E-mail:
+          <input
+            type="email"
+            name="mail"
+            placeholder="email@example.com"
+            id="oneR"
+          >
+        </label>
+        <label class="form_inf">
+          Password:
+          <input
+            type="password"
+            name="password"
+            id="twoR"
+        >
+        </label>
+      </fieldset>
+      <fieldset class="infBox">
+        <legend>An interesting fact about you!</legend>
+        <label class="form_inf">
+          Do you love cats?
+          <input
+            type="radio"
+            name="animal"
+            value="y"
+            id="firstIntrest"
+          >
+          Yes
+          <input
+            type="radio"
+            name="animal"
+            value="y"
+            id="Yes"
+          >
+          No
+        </label>
+        <label class="form_inf">
+          What is your favorite color
+          <input
+            type="color"
+            name="color"
+            id="secondIntrest"
+          >
+        </label>
+        <label class="form_inf">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="timeToBed"
+            step="1"
+            id="threeTime"
+          >
+        </label>
+        <label class="form_inf">
+          What are you favorite brand of cars?
+          <select name="favCar" required multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </label>
+        <label class="form_inf"
+          >How do you rate our work?
+          <input
+            type="range"
+            id="rate"
+            min="0"
+            max="0"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="infBox">
+        <legend>Additional info:</legend>
+        <label class="form_inf">
+          Comments:
+          <textarea name="com" id="comment"></textarea>
+        </label>
+        <label class="form_inf">
+          Would you recommend us?
+          <select name="recommend" id="recomendasion">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+      <button class="form_button" type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

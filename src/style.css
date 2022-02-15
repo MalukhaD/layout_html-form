@@ -1,1 +1,17 @@
 /* styles go here */
+.infBox:not(:first-child) {
+  margin-top: 20px;
+}
+
+.form_inf {
+  display: block;
+  margin-top: 10px;
+}
+
+.infBox .form_inf:nth-child(2) {
+  margin: 0;
+}
+
+.form_button {
+  margin-top: 20px;
+}
