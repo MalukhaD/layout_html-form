@@ -1,16 +1,16 @@
 /* styles go here */
-.infBox:not(:first-child) {
+.information_box:not(:first-child) {
   margin-top: 20px;
 }
 
-.form_inf {
+.form_information {
   display: block;
   margin-top: 10px;
 }
 
-.infBox .form_inf:nth-child(2) {
+/* .information_box .form_information:nth-child(2) {
   margin: 0;
-}
+} */
 
 .form_button {
   margin-top: 20px;
